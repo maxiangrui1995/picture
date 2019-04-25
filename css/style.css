@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  line-height: 1.5;
+  color: #314659;
+  font-size: 14px;
+  background: transparent;
+  transition: background 1s cubic-bezier(.075, .82, .165, 1);
+  overflow: hidden;
+}
+
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+a {
+  transition: color .3s ease
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+#vi-container {
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  cursor: url('../images/openhand.cur') 8 8, pointer;
+}
+
+#vi-container.drag {
+  cursor: url('../images/closedhand.cur') 8 8, move;
+}
+
+.loading {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #ccc;
+}
+
+
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -11px;
+  margin-top: -11px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+
+#box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 222px;
+  left: 222px;
+  background: #000;
+  color: #fff;
+}
